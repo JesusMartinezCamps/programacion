@@ -33,3 +33,10 @@ def test_fives(inyector):
     valorEsperado5 = 5
 
     assert valorEsperado5 == inyector.fives()
+
+
+def test_sixes(inyector):
+    
+    valorEsperado6 = 6
+
+    assert valorEsperado6 == inyector.sixes()
