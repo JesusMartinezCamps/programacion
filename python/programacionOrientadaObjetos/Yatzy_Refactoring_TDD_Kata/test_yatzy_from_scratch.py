@@ -28,3 +28,8 @@ def test_fours(inyector):
     # los metodos estaticos como chance()
     assert valorEsperado4 == inyector.fours()
 
+def test_fives(inyector):
+    
+    valorEsperado5 = 5
+
+    assert valorEsperado5 == inyector.fives()
