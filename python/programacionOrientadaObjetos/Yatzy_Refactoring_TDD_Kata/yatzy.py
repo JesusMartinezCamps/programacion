@@ -99,8 +99,9 @@ class Yatzy:
 
     def sixes(self):
         sum = 0
+        i = 0
         for i in range(5): 
-            if (self.dice[i] == 5):
+            if (self.dice[i] == 6):
                 sum += 6
         return sum
     
