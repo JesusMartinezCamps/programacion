@@ -23,7 +23,8 @@ def inyector():
 
 def test_fours(inyector):
     # Es necesario un objeto ya creado
-    valorEsperado = 4
+    valorEsperado4 = 4
     # No puedo testear con fixtures = inyeccion de dependencias
     # los metodos estaticos como chance()
-    assert valorEsperado == inyector.fours()
+    assert valorEsperado4 == inyector.fours()
+
