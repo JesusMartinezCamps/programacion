@@ -12,6 +12,25 @@ def test_chance():
     assert 14 == Yatzy.chance(1, 1, 3, 3, 6)
     assert 21 == Yatzy.chance(4, 5, 5, 6, 1)
 
+def test_Yatzy():
+    resultado = 50
+    assert resultado == Yatzy.yatzy(1, 1, 1, 1, 1)
+
+def test_ones():
+    assert 3 == Yatzy.ones(1, 1, 2, 1, 6)
+    assert 0 == Yatzy.ones(3, 2, 2, 5, 5)
+    assert 5 == Yatzy.ones(1, 1, 1, 1, 1)
+
+def test_twos():
+    assert 2 == Yatzy.twos(2, 1, 1, 1, 1)
+    assert 4 == Yatzy.twos(2, 2, 1, 1, 1)
+    assert 6 == Yatzy.twos(2, 2, 2, 1, 1)
+
+def test_threes():
+    assert 3 == Yatzy.threes(3, 1, 1, 2, 5)
+    assert 0 == Yatzy.threes(6, 1, 4, 2, 5)
+    assert 9 == Yatzy.threes(3, 3, 3, 2, 5)
+
 
 @pytest.fixture
 
@@ -20,32 +39,6 @@ def inyector():
     tirada = Yatzy(1, 2, 6, 4, 5)
     return tirada
 
-
-def test_Yatzy():
-
-    resultado = 50
-
-    assert resultado == Yatzy.yatzy(1, 1, 1, 1, 1)
-
-
-def test_ones():
-    assert 3 == Yatzy.ones(1, 1, 2, 1, 6)
-    assert 0 == Yatzy.ones(3, 2, 2, 5, 5)
-    assert 5 == Yatzy.ones(1, 1, 1, 1, 1)
-
-
-def test_twos():
-    assert 2 == Yatzy.twos(2, 1, 1, 1, 1)
-    assert 4 == Yatzy.twos(2, 2, 1, 1, 1)
-    assert 6 == Yatzy.twos(2, 2, 2, 1, 1)
-
-
-def test_threes():
-    assert 3 == Yatzy.threes(3, 1, 1, 2, 5)
-    assert 0 == Yatzy.threes(6, 1, 4, 2, 5)
-    assert 9 == Yatzy.threes(3, 3, 3, 2, 5)
-
-
 def test_fours(inyector):
     # Es necesario un objeto ya creado
     valorEsperado4 = 4
@@ -53,6 +46,13 @@ def test_fours(inyector):
     # los metodos estaticos como chance()
     assert valorEsperado4 == inyector.fours()
 
+def test_fives(inyector):
+    valorEsperado5 = 5
+    assert valorEsperado5 == inyector.fives()
+
+def test_sixes(inyector):
+    valorEsperado6 = 6
+    assert valorEsperado6 == inyector.sixes()
 
 def test_pair():
     assert 8 == Yatzy.pair(3, 3, 3, 4, 4)
@@ -66,4 +66,5 @@ def test_two_pair():
     assert 8 == Yatzy.two_pair(1, 1, 2, 3, 3)
     assert 0 == Yatzy.two_pair(1, 1, 2, 3, 4)
     assert 6 == Yatzy.two_pair(1, 1, 2, 2, 2)
-    #assert 12 == Yatzy.two_pair(1, 3, 3, 3, 3)
+    assert 12 == Yatzy.two_pair(1, 3, 3, 3, 3)
+    assert 12 == Yatzy.two_pair(3, 3, 3, 3, 3)
