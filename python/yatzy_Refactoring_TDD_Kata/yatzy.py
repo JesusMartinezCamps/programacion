@@ -121,24 +121,19 @@ class Yatzy:
 
 
     @staticmethod
-    def smallStraight( d1,  d2,  d3,  d4,  d5):
-        tallies = [0]*6
-        tallies[d1-1] += 1
-        tallies[d2-1] += 1
-        tallies[d3-1] += 1
-        tallies[d4-1] += 1
-        tallies[d5-1] += 1
-        if (tallies[0] == 1 and
-            tallies[1] == 1 and
-            tallies[2] == 1 and
-            tallies[3] == 1 and
-            tallies[4] == 1):
+    def small_straight(*dice):
+        straight = 0
+        for number in range(1, 6, 1):
+            if dice.count(number) == 1:
+                straight += 1
+
+        if straight == 5:
             return 15
-        return 0
-    
+        else:
+            return 0
 
     @staticmethod
-    def largeStraight( d1,  d2,  d3,  d4,  d5):
+    def large_straight( d1,  d2,  d3,  d4,  d5):
         tallies = [0]*6
         tallies[d1-1] += 1
         tallies[d2-1] += 1
