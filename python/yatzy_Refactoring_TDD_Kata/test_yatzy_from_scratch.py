@@ -85,6 +85,6 @@ def test_small_straight():
     assert 0 == Yatzy.small_straight(3, 2, 1, 5, 5)
 
 def test_large_straight():
-    assert 20 == Yatzy.small_straight(2, 3, 4, 5, 6)
-    assert 20 == Yatzy.small_straight(3, 2, 6, 5, 4)
-    assert 0 == Yatzy.small_straight(3, 2, 6, 6, 5)
+    assert 20 == Yatzy.large_straight(2, 3, 4, 5, 6)
+    assert 20 == Yatzy.large_straight(3, 2, 6, 5, 4)
+    assert 0 == Yatzy.large_straight(3, 2, 6, 6, 5)
