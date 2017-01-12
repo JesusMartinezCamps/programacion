@@ -35,15 +35,11 @@ def test_threes():
 @pytest.fixture
 
 def inyector():
-    # Es el setup de unittest o de JUnit
     tirada = Yatzy(1, 2, 6, 4, 5)
     return tirada
 
 def test_fours(inyector):
-    # Es necesario un objeto ya creado
     valorEsperado4 = 4
-    # No puedo testear con fixtures = inyeccion de dependencias
-    # los metodos estaticos como chance()
     assert valorEsperado4 == inyector.fours()
 
 def test_fives(inyector):

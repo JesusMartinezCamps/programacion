@@ -55,29 +55,25 @@ class Yatzy:
         self.dice[4] = _5
     
     def fours(self):
-        sum = 0
-        for i in range(5):
-            if (self.dice[i] == 4): 
-                sum += 4
-        return sum
-    
+        score = 0
+        for number in range(5):
+            if (self.dice[number] == 4): 
+                score += 4
+        return score
 
     def fives(self):
-        s = 0
-        i = 0
-        for i in range(len(self.dice)): 
-            if (self.dice[i] == 5):
-                s = s + 5
-        return s
-    
+        score = 0
+        for number in range(5): 
+            if (self.dice[number] == 5):
+                score += 5
+        return score
 
     def sixes(self):
-        sum = 0
-        i = 0
-        for i in range(5): 
-            if (self.dice[i] == 6):
-                sum += 6
-        return sum
+        score = 0
+        for number in range(5): 
+            if (self.dice[number] == 6):
+                score += 6
+        return score
     
     @staticmethod
     def pair(*dice):
@@ -118,7 +114,6 @@ class Yatzy:
                 score += number * 4
                 return score
         return 0
-
 
     @staticmethod
     def small_straight(*dice):
