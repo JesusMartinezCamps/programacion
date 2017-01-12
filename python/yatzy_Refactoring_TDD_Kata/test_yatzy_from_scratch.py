@@ -71,7 +71,7 @@ def test_two_pair():
 
 
 def test_three_of_a_kind():
-    assert 9 == Yatzy.three_of_a_kind(3, 3, 3, 4, 5)
+    assert 3 == Yatzy.three_of_a_kind(1, 1, 1, 4, 5)
     assert 0 == Yatzy.three_of_a_kind(3, 3, 4, 5, 6)
     assert 12 == Yatzy.three_of_a_kind(4, 4, 4, 4, 1)
-    assert 15 == Yatzy.three_of_a_kind(5, 5, 5, 5, 5)
+    assert 18 == Yatzy.three_of_a_kind(6, 6, 6, 6, 6)
