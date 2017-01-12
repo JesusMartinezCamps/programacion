@@ -75,3 +75,8 @@ def test_three_of_a_kind():
     assert 0 == Yatzy.three_of_a_kind(3, 3, 4, 5, 6)
     assert 12 == Yatzy.three_of_a_kind(4, 4, 4, 4, 1)
     assert 18 == Yatzy.three_of_a_kind(6, 6, 6, 6, 6)
+
+def test_four_of_a_kind():
+    assert 8 == Yatzy.four_of_a_kind(2, 2, 2, 2, 5)
+    assert 0 == Yatzy.four_of_a_kind(2, 2, 2, 5, 5)
+    assert 12 == Yatzy.four_of_a_kind(3, 3, 3, 3, 3)
