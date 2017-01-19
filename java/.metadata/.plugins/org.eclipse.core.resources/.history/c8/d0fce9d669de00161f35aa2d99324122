@@ -1,0 +1,10 @@
+package foobarspam; /*org.foobarspam.figuras*/
+
+public abstract class FiguraGeometrica{
+	
+	private String nombre;
+	
+
+	
+	public abstract double area();
+}

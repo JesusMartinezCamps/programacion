@@ -1,0 +1,16 @@
+package foobarspam;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*assertEquals(12, Rectangulo.area);*/
+		
+		if(12 == Rectangulo.area()){
+			System.out.println("Esta bien");
+		}else{
+			System.out.println("mal");
+		}
+
+	}
+
+}

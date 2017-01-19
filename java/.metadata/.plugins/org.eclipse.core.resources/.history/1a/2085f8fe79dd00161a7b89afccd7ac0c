@@ -1,0 +1,7 @@
+package couseAdministration;
+
+class Student {
+	int id;
+	String firstName, lastName;
+	int birthYear, birthMonth, birthDay;
+}

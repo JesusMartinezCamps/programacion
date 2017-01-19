@@ -1,0 +1,15 @@
+package foobarspam;
+
+public abstract class FiguraGeometrica{
+	
+	public static void main (String[] args) {
+		
+		Retangulo = new Rectangulo;
+		
+		assertEqual(12, rectangulo.area) ;
+	}
+	
+	public static double area(){
+		
+	}
+}

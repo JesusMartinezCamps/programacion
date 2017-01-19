@@ -1,0 +1,11 @@
+package foobarspam;
+
+public class figuraGeometrica{
+	
+	public static void main (String[] args) {
+		
+		Retangulo = new Rectangulo;
+		
+		assertEqual(12, rectangulo.area) ;
+	}
+}
