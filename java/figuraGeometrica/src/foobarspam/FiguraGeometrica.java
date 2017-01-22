@@ -1,21 +1,22 @@
 package foobarspam; /*org.foobarspam.figuras*/
 
-public abstract class FiguraGeometrica{
+public abstract class FiguraGeometrica {
 	
 	private String nombre;
 	
-	public FiguraGeometrica(){
+	public FiguraGeometrica() {
 		this.nombre = "desconocido";
 	}
 		
-	public FiguraGeometrica(String nombre){
+	public FiguraGeometrica(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getNombre(){
+	
+	public String getNombre() {
 		return this.nombre = nombre;
 	}
 	
-	public void setNombre(){
+	public void setNombre() {
 		this.nombre = nombre;
 	}
 	

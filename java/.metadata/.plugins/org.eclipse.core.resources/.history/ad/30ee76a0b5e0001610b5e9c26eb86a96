@@ -1,0 +1,13 @@
+package foobarspam;
+
+public class Circulo {
+	
+	/*Variables*/
+	private double radio = 5;
+	private final double  pi = 3.14;
+	
+	public Circulo() {
+		super();
+	}
+
+}

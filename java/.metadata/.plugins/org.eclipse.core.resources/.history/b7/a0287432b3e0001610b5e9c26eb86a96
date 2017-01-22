@@ -1,0 +1,20 @@
+package foobarspam;
+
+public class Cuadrado extends FiguraGeometrica {
+
+	private double lado = 5;
+		
+	public Cuadrado(){
+		super();
+	}
+	
+	public double getLado() {
+		return this.lado;
+	}
+	
+	@Override
+	public double area() {
+		return getLado() * getLado();
+	}
+	
+}
