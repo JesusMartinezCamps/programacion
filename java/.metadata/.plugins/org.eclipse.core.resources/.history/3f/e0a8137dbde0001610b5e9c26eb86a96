@@ -1,0 +1,14 @@
+package org.foobarspam.cuentaCorriente;
+
+public class CuentaCorriente {
+
+	public static void main(String[] args) {
+
+		private String nombre = "";
+		private String apellidos = "";
+		private String direccion = "";
+		private double telefono = "";
+
+	}
+
+}

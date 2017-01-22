@@ -1,0 +1,15 @@
+package org.foobarspam.cuentaCorriente;
+
+public class Datos {
+	
+	private String nombre = "";
+	private String apellidos = "";
+	private String direccion = "";
+	private String telefono = "";
+	private String NIF = "";
+	private double saldo = ;
+	
+	public String pedirDatos(nombre, apellidos, direccion, telefono, NIF){
+		
+	}
+}

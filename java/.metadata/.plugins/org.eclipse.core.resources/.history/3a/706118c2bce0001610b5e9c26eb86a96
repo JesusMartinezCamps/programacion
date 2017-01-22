@@ -1,0 +1,8 @@
+package org.foobarspam.cuentaCorriente;
+
+public class Dni {
+
+	private String nombre = "";
+	private String NIF = "";
+	private String nacimiento ="";
+}
