@@ -39,6 +39,7 @@ public class Main {
 		
 		
 		/*Creacion del array*/
+		/*Siendo  FiguraGeometrica	la clase padre, por lo que se pueden meter todas las clases que deriven de ella*/
 		ArrayList<FiguraGeometrica> figuras = new ArrayList<>();
 		
 		

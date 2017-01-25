@@ -13,7 +13,7 @@ class CuentaCorriente:
 	def getNombre(self):
 		return self.nombre
 
-	def setNombre(nombre):
+	def setNombre(self, nombre):
 		print("Introcude el nombre: ")
 		nombre = input()
 		print("Se ha introducido: ", nombre)
@@ -85,4 +85,4 @@ if __name__ == "__main__":
 	
 	cuentaCorrienteEjemplo = CuentaCorriente("Antonio","Perez","65235971","Avenida","4565125B",20)
 	
-	cuentaCorrienteEjemplo.consultarCuenta()
+	cuentaCorrienteEjemplo.setNombre()

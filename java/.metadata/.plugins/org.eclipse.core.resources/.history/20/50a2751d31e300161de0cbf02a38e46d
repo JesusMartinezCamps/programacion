@@ -1,0 +1,32 @@
+package org.foobarspam.esBisiesto.year;
+
+public class Year {
+
+	private int year = 0;
+	
+	/*Constructor que recibe un año*/
+	public Year(int year){
+		this.year = year;
+	}
+	
+	/*getters y setters*/
+	public int getYear(){
+		return this.year;
+	}
+	
+	/*El metodo esBisiesto*/
+	public Boolean esBisiesto(){
+		return getYear() % 4 == 0;
+	}
+	
+	/*Comprueba si el año termina en 100*/
+	public String acaba100(){
+		int resto = getYear()%100;
+		if(resto == 00 & resto % 4 == 0){
+			System.out.println(resto);
+		}else{
+			System.out.println(resto);
+		}
+		System.out.println(resto);
+	}
+}

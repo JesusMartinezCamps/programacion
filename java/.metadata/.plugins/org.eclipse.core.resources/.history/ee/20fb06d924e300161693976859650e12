@@ -1,0 +1,17 @@
+package org.foobarspam.esBisiesto.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class YearTesting {
+
+	@Test
+	public void test() {
+		/* clase, año, creacion de clase año (lo que nos pasan)*/
+		Year any =new Year(1904);
+		
+		assertEquals("Test año bisiesto acabado en 4", true, añy.esBisiesto())
+	}
+
+}

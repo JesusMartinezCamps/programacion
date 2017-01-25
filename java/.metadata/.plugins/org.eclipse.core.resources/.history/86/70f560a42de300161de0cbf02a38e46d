@@ -1,0 +1,28 @@
+package org.foobarspam.esBisiesto.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import org.foobarspam.esBisiesto.year.*;
+
+public class YearTesting {
+
+	@Test
+	public void test_esBisiesto_cuatro() {
+		/* Orden:
+		 * Nombre clase, nuevo nombre = creacion con el nombre de la clase (lo que nos pasan)
+			  Year 			any 	  = 	new Year						(1904)*/
+		Year any = new Year(1905);
+		assertEquals("Test año bisiesto acabado en 4", true, any.esBisiesto());
+	}
+	
+	@Test
+	public void test_esBisiesto_seis() {
+		/* clase, año, creacion de clase año (lo que nos pasan)*/
+		Year any = new Year(2016);
+		
+		assertEquals("Test año bisiesto acabado en 6", true, any.esBisiesto());
+	}
+
+}

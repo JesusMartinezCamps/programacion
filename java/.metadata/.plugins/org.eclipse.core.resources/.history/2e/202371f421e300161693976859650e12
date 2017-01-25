@@ -1,0 +1,22 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class testAñoBisiesto {
+	
+	AñoBisiesto añoPrueba = new AñoBisiesto(2003);
+
+	/*@Test
+	public void test() {
+		assertEquals(4, añoActual.comprobarAño());
+	}
+	*/
+	@Test
+	public void testPositivo(){
+		assertEquals(AñoBisiesto.comprobarAño > 0, AñoBisiesto.comprobarAño);
+	
+	}
+
+}

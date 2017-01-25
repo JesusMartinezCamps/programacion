@@ -1,0 +1,14 @@
+package org.foobarspam.esBisiesto.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class YearTesting {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,13 @@
+package org.foobarspam.añoBisiesto;
+
+public class AñoBisiesto {
+	private int año;
+	
+	public AñoBisiesto(int año) {
+		this.año = año;
+	}
+
+	public int comprobarAño(){
+		return this.año;
+	}
+}
