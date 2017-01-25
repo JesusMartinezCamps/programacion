@@ -29,7 +29,7 @@ public class YearTesting {
 	@Test
 	public void test_esBisiesto_cienYcuatrocientos() {
 		/*Se comprueba, en caso de ser divisible por 100 que tambien lo sea por cuatrocientos*/
-		Year any = new Year(2200);
+		Year any = new Year(1700);
 		assertEquals("Test año acabado en 100 y 400", true, any.terminaCienYcuatrocientos());
 	}
 	

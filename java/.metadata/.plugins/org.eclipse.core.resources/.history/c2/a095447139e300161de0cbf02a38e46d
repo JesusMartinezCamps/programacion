@@ -32,7 +32,6 @@ public class Year {
 	public Boolean terminaCien(){
 		return getYear() % 100 == 0;
 	}
-	
 	public Boolean terminaCienYcuatrocientos(){
 		return getYear() % 100 == 0 & getYear() % 400 == 0;
 	}
