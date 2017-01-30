@@ -1,0 +1,20 @@
+package org.foobarspam.bowlingGame.Game;
+
+public class Frame {
+
+	private int firstThrow = 6;
+	private int secondThrow = 3;
+	
+	private int frame = firstThrow + secondThrow;
+	
+	
+	/*Constructor*/
+	public Frame(int frame){
+		this.frame = frame;
+	}
+	
+	/*Metodo getter de frame*/
+	public int getScore(){
+		return this.frame;
+	}
+}
