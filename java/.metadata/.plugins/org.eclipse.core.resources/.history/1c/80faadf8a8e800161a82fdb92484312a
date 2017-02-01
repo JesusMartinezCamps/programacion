@@ -1,0 +1,39 @@
+package game;
+
+public class ScoreCard {
+
+	private String scoreCard;
+	private int totalScore = 0;
+	private String simbols = "-123456789X/";
+	
+	/*Constructor ScoreCard*/
+	public ScoreCard(){
+		this.scoreCard ="";
+	}
+	public ScoreCard(String scoreCard){
+		this.scoreCard = scoreCard;
+	}
+	
+	/*Getter Setters*/
+	public void setTotalScore(int totalScore){
+		this.totalScore = totalScore;
+	}
+	public int getTotalScore(){
+		return this.totalScore;
+	}
+	public String getScoreCard(){
+		return this.scoreCard;
+	}
+
+	
+	public void roll(char pin){
+		setTotalScore(getTotalScore() + pin) ;
+	}
+	private int scorePin(){
+		int newScore = 0;
+		newScore = Character.getNumericValue();
+		return newScore;
+	}
+	
+
+}

@@ -1,0 +1,20 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.foobarspam.bowling.game.ScoreCard;
+
+import game.ScoreCard;
+import org.foobarspam.bowling.game.ScoreCard;
+
+
+
+public class test {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

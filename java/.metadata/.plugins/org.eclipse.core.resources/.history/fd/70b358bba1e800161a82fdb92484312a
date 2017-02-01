@@ -1,0 +1,32 @@
+package game;
+
+public class ScoreCard {
+
+	private String scoreCard;
+	private int totalScore = 0;
+	private String simbols = "-123456789X/";
+	private String pins;
+	
+	/*Constructor ScoreCard*/
+	public ScoreCard(String pins){
+
+	}
+	
+	public String getScoreCard(){
+		return scoreCard;
+	}
+
+	
+	public void roll(char pin){
+		totalScore = totalScore + scorePin(pin);
+	}
+	private int scorePin(char pin){
+		int newScore = 0;
+		newScore = Character.getNumericValue(pin);
+		return newScore;
+	}
+	
+	public int totalScore(totalScore){
+		return this.totalScore;
+	}
+}
