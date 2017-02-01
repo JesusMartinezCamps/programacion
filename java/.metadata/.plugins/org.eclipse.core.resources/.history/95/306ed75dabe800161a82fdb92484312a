@@ -27,7 +27,7 @@ public class test{
 		
 		ScoreCard scoreCard = new ScoreCard(pins);
 		
-		scoreCard.calculateScore();
+		calculateScore(scoreCard);
 		
 		assertEquals(total, scoreCard.getTotalScore());			
 	}

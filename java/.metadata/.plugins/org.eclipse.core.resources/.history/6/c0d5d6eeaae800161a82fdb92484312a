@@ -8,7 +8,13 @@ import game.ScoreCard;
 
 public class test{
 	
-
+	private void calculateScore(ScoreCard scoreCard){
+		
+		for(int i=0; i < scoreCard.getScoreCard().length(); i++){
+			char pin = scoreCard.getScoreCard().charAt(i);
+			scoreCard.roll(pin);
+		}		
+	}
 //	@Test
 //	public void getSimbolValueTest(){
 //		
@@ -27,7 +33,7 @@ public class test{
 		
 		ScoreCard scoreCard = new ScoreCard(pins);
 		
-		scoreCard.calculateScore();
+		calculateScore(scoreCard);
 		
 		assertEquals(total, scoreCard.getTotalScore());			
 	}

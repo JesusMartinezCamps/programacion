@@ -31,7 +31,7 @@ public class ScoreCard {
 		return newScore;
 	}
 	
-	public void calculateScore(){
+	public void calculateScore(scoreCard){
 		for(int i=0; i < getScoreCard().length(); i++){
 			char pin = getScoreCard().charAt(i);
 			roll(pin);

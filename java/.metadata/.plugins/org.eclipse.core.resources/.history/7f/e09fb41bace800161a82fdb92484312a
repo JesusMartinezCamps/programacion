@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import game.ScoreCard;
+import game.ScoreCard.*;
 
 public class test{
 	
@@ -27,7 +27,7 @@ public class test{
 		
 		ScoreCard scoreCard = new ScoreCard(pins);
 		
-		scoreCard.calculateScore();
+		ScoreCard.calculateScore(scoreCard);
 		
 		assertEquals(total, scoreCard.getTotalScore());			
 	}
