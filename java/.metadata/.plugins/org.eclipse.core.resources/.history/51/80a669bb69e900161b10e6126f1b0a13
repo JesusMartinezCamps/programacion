@@ -1,0 +1,31 @@
+package org.foobarspam.punto;
+
+public class MatrizPuntoSilla {
+
+	private int matriz[][] = new int[3][3];
+	private int total = 0;
+	/*Constructor*/
+	public MatrizPuntoSilla(){
+		
+	}
+	
+	/*Getter setters*/
+	
+	public int getTotal(){
+		return this.total;
+	}
+	public void setTotal(int total){
+		this.total = total;
+	}
+	
+	/*Interfaz publica programa*/
+	public int recorrerMatriz(int matriz[]){
+		for(int fila = 0 ; fila < matriz.length ; fila++){
+			setTotal(getTotal() +1);
+			for(int columna = 0 ; columna < matriz[fila].length ; columna++){
+				setTotal(getTotal() +1);
+			}
+		}
+		return getTotal();
+	}
+}
