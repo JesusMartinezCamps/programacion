@@ -1,9 +1,0 @@
-package foobarspam;
-
-public class Elipse {
-
-	public Elipse() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

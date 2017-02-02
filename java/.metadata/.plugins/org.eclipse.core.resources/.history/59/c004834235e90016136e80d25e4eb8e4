@@ -1,0 +1,74 @@
+package game;
+
+public class ScoreCard {
+
+	private String scoreCard = "";
+	private int totalScore = 0;
+	public static String symbols = "-123456789X/";
+	private int ball = 0;
+	private boolean firstRoll = true;
+	
+	/*Constructores*/
+	public ScoreCard(){
+		this.scoreCard= "";
+	}
+	public ScoreCard(String scoreCard){
+		this.scoreCard = scoreCard;
+	}
+	
+	/*Getter Setters*/
+	private void setTotalScore(int totalScore){
+		this.totalScore += totalScore;
+	}
+	public int getTotalScore(){
+		return this.totalScore;
+	}
+	public String getScoreCard(){
+		return this.scoreCard;
+	}
+	private void nextBall(){
+		this.ball ++;
+	}
+	
+	private boolean isFirstRoll(){
+		return this.firstRoll;
+	}
+	/*Interfaz publica*/
+	public static int getSymbolValue(char symbol){
+		return symbols.indexOf(symbol);
+	}
+	
+	public void roll(char pin){
+//		setTotalScore(scorePin(pin));
+		nextBall();
+		if(isFirstRoll()){
+			setFirstRollPins(getSimbolValue(pins));
+			setFirstRoll(false);
+			if(isSpare()){
+				setTotalScore(getTotalScore() + getSimbolValue(pins));
+			}
+		}
+		else if(pins == '/'){
+			setTotalScore(getTotalScore() + 10);
+			setSpare(true);
+			setFirstRoll(true);		
+		}
+		else {
+			setTotalScore(getTotalScore() + getFirstRollPins() + getSimbolValue(pins));
+			setFirstRoll(true);
+			setSpare(false);
+		}
+	}
+	private int scorePin(char pin){
+		int newScore = 0;
+		newScore = Character.getNumericValue(pin);
+		return newScore;
+	}
+	
+	public void calculateScore(){
+		for(int i=0; i < getScoreCard().length(); i++){
+			char pin = getScoreCard().charAt(i);
+			roll(pin);
+		}		
+	}
+}
