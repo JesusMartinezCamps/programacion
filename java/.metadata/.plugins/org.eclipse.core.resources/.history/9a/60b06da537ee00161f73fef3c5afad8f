@@ -1,0 +1,10 @@
+package org.foobarspam.Bicicletas;
+
+public class Bicicletas {
+
+	int id = 0;
+	
+	public Bicicletas(int id){
+		this.id = id;
+	}
+}

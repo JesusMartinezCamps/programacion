@@ -1,0 +1,19 @@
+package org.foobarspam.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.foobarspam.Estacion.*;
+
+public class EstacionTest {
+
+	@Test
+	public void ConstructorEstacionTest() {
+		Estacion estacion = new Estacion(1, "Manacor", 6);
+		
+		assertEquals(1, getId, 0);
+		assertEquals("Manacor", getDireccion);
+		assertEquals(6, getNumeroAnclajes, 0);
+	}
+
+}

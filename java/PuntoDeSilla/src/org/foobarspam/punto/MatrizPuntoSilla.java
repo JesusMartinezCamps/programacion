@@ -3,7 +3,7 @@ package org.foobarspam.punto;
 public class MatrizPuntoSilla {
 
 	private int matriz[][]= new int [3][3];
-private int total = 0;
+	private int total = 0;
 	
 	/*Constructor*/
 	public MatrizPuntoSilla(int[][] matriz){

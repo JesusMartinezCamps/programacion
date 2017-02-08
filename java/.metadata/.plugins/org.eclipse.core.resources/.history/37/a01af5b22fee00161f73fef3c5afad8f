@@ -1,0 +1,14 @@
+package org.foobarspam.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EstacionTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

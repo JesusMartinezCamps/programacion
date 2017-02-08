@@ -1,0 +1,13 @@
+package org.foobarspam.tarjeta;
+
+public class TarjetaUsuario {
+
+	private String id = 000000000;
+	private Boolean estado = false;
+	
+	public TarjetaUsuario(String id, Boolean estado){
+		this.id = id;
+		this.estado = estado;
+	}
+					 
+}

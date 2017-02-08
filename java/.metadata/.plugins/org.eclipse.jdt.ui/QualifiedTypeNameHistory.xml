@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="game.ScoreCard"/>
+<fullyQualifiedTypeName name="org.foobarspam.punto.MatrizPuntoSilla"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.foobarspam.Bicicleta.Bicicleta"/>
 </qualifiedTypeNameHistroy>
