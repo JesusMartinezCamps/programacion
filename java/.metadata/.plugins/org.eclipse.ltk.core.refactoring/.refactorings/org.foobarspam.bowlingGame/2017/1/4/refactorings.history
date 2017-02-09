@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;org.foobarspam.bowlingGame.Testing.ThrowTest&apos; to &apos;FrameTest&apos;&#x0A;- Original project: &apos;org.foobarspam.bowlingGame&apos;&#x0A;- Original element: &apos;org.foobarspam.bowlingGame.Testing.ThrowTest&apos;&#x0A;- Renamed element: &apos;org.foobarspam.bowlingGame.Testing.FrameTest&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ThrowTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.foobarspam.bowlingGame.Testing{ThrowTest.java[ThrowTest" matchStrategy="1" name="FrameTest" qualified="false" references="true" similarDeclarations="false" stamp="1485447260654" textual="false" version="1.0"/>
-</session>

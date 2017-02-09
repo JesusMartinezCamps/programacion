@@ -1,7 +1,0 @@
-package foobarspam;
-
-public class Rectangulo extends FiguraGeometrica{
-	
-	private String nombre = String "Rectangulo" ;
-	
-}
